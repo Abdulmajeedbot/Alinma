@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اختبر وعيك المالي</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Logo Section -->
+  <div class="logo-container">
+    <img src="assets/ALINMA.png" alt="شعار مصرف الإنماء" class="logo">
+  </div>
+
+  <!-- Start Screen -->
+<div id="start-screen" class="screen">
+    <div class="central-message">
+      <h1>اختـبر<br>وعـيك<br>المالي</h1>
+      <!-- AMAD Logo -->
+      <div class="amad-logo">
+        <img src="assets/AMAD.png" alt="شعار AMAD">
+      </div>
+      <p class="cta-text">أجب على الأسئلة بنعم أو لا واكتشف مدى وعيك المالي في دقائق!</p>
+    </div>
+    <button onclick="startQuiz()" class="start-button">ابدأ</button>
+  </div>
+  
+
+  <!-- Questions Screen -->
+<div id="question-screen" class="screen hidden">
+    <div class="question-container">
+      <h2 id="question-title">السؤال 1</h2>
+      <p id="question-text">هل لديك ميزانية شهرية تنظم من خلالها دخلك ونفقاتك؟</p>
+    </div>
+    <div class="buttons-container">
+      <button onclick="saveAnswer('yes')" class="response-button yes-button">نعم</button>
+      <button onclick="saveAnswer('no')" class="response-button no-button">لا</button>
+    </div>
+    <button onclick="goToStart()" class="back-to-start">العودة إلى البداية</button>
+    <!-- AMAD Logo -->
+    <div class="amad-logo">
+      <img src="assets/AMAD.png" alt="شعار AMAD">
+    </div>
+  </div>
+  
+
+  <!-- Results Screen -->
+  <div id="result-screen" class="screen hidden">
+    <div class="result-container">
+      <h1 id="result-title">
+        <span class="highlight">خبير</span> الخزينة
+      </h1>
+      <p id="result-description">
+        أنت خبير مالي يعرف كيف يدير أموره وكأنه يخطط لميزانية دولة!
+      </p>
+    </div>
+    <!-- AMAD Logo -->
+    <div class="amad-logo">
+      <img src="assets/AMAD.png" alt="شعار AMAD">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

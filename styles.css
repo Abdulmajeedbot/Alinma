@@ -1,0 +1,325 @@
+/* General Settings */
+body {
+    font-family: 'TheSans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    text-align: center;
+    direction: rtl;
+}
+
+/* Logo Section (Global) */
+.logo-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.logo {
+    max-width: 40vw;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 20vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 30vw;
+    }
+}
+
+/* Screens */
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Central Message */
+.central-message h1 {
+    font-family: 'TheSansArabicBold', sans-serif;
+    font-size: 8rem;
+    color: #4e3629;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .central-message h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .central-message h1 {
+        font-size: 3rem;
+    }
+}
+
+.cta-text {
+    font-size: 4rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .cta-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-text {
+        font-size: 1rem;
+    }
+}
+
+/* Start Button (ابدأ) */
+.start-button {
+    font-family: 'TheSansArabicBold', sans-serif;
+    font-size: 4rem;
+    padding: 15px 30px;
+    width: 350px;
+    height: auto;
+    background-color: transparent;
+    color: #4e3629;
+    border: 5px solid #4e3629;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #4e3629;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .start-button {
+        width: 200px;
+        font-size: 1.2rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .start-button {
+        width: 150px;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* حاوية السؤال */
+.question-container {
+    margin-bottom: 30px; /* مسافة بين السؤال والأزرار */
+}
+
+/* أزرار نعم و لا */
+.buttons-container {
+    display: flex; /* ترتيب الأزرار بشكل أفقي */
+    justify-content: center; /* محاذاة الوسط */
+    gap: 20px; /* مسافة بين الأزرار */
+}
+/* Response Buttons: نعم, لا */
+.response-button {
+    font-family: 'TheSansArabicBold', sans-serif;
+    font-size: 3rem;
+    padding: 15px 30px;
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* نعم Button (Green) */
+.response-button.yes-button {
+    background-color: #ffffff;
+    color: #27ae60;
+    border-color: #ffffff;
+}
+
+.response-button.yes-button:hover {
+    background-color: #ffffff;
+    color: #27ae60;
+    transform: scale(1.05);
+}
+
+/* لا Button (Red) */
+.response-button.no-button {
+    background-color: #ffffff;
+    color: #e74c3c;
+    border-color: #ffffff;
+}
+
+.response-button.no-button:hover {
+    background-color: #ffffff;
+    color: #e74c3c;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments for Buttons */
+@media (max-width: 768px) {
+    .response-button {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .response-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        width: 150px;
+    }
+}
+
+/* AMAD Logo */
+.amad-logo {
+    margin: 20px auto; /* Center horizontally and add spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amad-logo img {
+    max-width: 250px;
+    height: auto;
+}
+
+/* Adjust sizes for tablets */
+@media (max-width: 768px) {
+    .amad-logo img {
+        max-width: 120px;
+    }
+}
+
+/* Adjust sizes for mobile screens */
+@media (max-width: 480px) {
+    .amad-logo img {
+        max-width: 100px;
+    }
+}
+
+#question-screen .amad-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#result-screen .amad-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Questions Styling */
+#question-title {
+    font-family: 'TheSans', sans-serif;
+    font-size: 4rem;
+    color: #4e3629;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#question-text {
+    font-family: 'TheSansArabicBold', sans-serif;
+    font-size: 2.8rem;
+    color: #000000;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 20px;
+}
+
+/* Result Screen: Title and Description */
+#result-title {
+    font-family: 'TheSansArabicBold', sans-serif;
+    font-size: 7rem;
+    color: #4e3629;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#result-title .highlight {
+    font-weight: bold;
+}
+
+#result-description {
+    font-size: 5rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #result-title {
+        font-size: 2.5rem;
+    }
+    #result-description {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #result-title {
+        font-size: 2rem;
+    }
+    #result-description {
+        font-size: 1rem;
+    }
+}
+
+/* زر العودة إلى البداية */
+.back-to-start {
+    position: fixed; /* زر ثابت في الشاشة */
+    top: 20px; /* المسافة من الأعلى */
+    right: 20px; /* المسافة من اليمين */
+    background-color: #f4a261; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    font-family: 'TheSansArabicBold', sans-serif; /* خط مناسب */
+    font-size: 1.2rem; /* حجم النص */
+    padding: 10px 20px; /* حجم الزر */
+    border: none; /* إزالة الحدود */
+    border-radius: 8px; /* حواف مستديرة */
+    cursor: pointer; /* مؤشر اليد عند التمرير */
+    z-index: 1000; /* فوق جميع العناصر */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* تأثير عند التمرير */
+}
+
+/* تأثير عند التمرير على الزر */
+.back-to-start:hover {
+    background-color: #e76f51; /* تغيير لون الخلفية عند التمرير */
+    transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+
+
+@font-face {
+    font-family: 'TheSansArabicBold';
+    src: url('assets/THESANSARABIC-BOLD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TheSansArabicLight';
+    src: url('assets/TheSansArabic-Light.otf') format('opentype');
+}
