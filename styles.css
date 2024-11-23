@@ -295,7 +295,7 @@ body {
     position: fixed; /* زر ثابت في الشاشة */
     top: 20px; /* المسافة من الأعلى */
     right: 20px; /* المسافة من اليمين */
-    background-color: #f4a261; /* لون الخلفية */
+    background-color: #2e5867; /* لون الخلفية */
     color: #fff; /* لون النص */
     font-family: 'TheSansArabicBold', sans-serif; /* خط مناسب */
     font-size: 1.2rem; /* حجم النص */
@@ -309,10 +309,28 @@ body {
 
 /* تأثير عند التمرير على الزر */
 .back-to-start:hover {
-    background-color: #e76f51; /* تغيير لون الخلفية عند التمرير */
+    background-color: #2e5867; /* تغيير لون الخلفية عند التمرير */
     transform: scale(1.05); /* تكبير الزر قليلاً */
 }
+/* زر ابدأ من جديد */
+.restart-button {
+    background-color: #2e5867;
+    color: #fff;
+    font-family: 'TheSansArabicBold', sans-serif;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+/* تأثير عند التمرير */
+.restart-button:hover {
+    background-color: #2e5867;
+    transform: scale(1.05);
+}
 
 @font-face {
     font-family: 'TheSansArabicBold';
